@@ -1,0 +1,21 @@
+{
+    "name": "fedemotta/yii2-cronjob",
+    "description": "Yii2 extension to help in the creation of automated console scripts",
+    "type": "yii2-extension",
+    "keywords": ["yii2","extension","cron","job","schedule","console","script","crontab"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Federico Nicolás Motta",
+            "email": "fedemotta@gmail.com"
+        }
+    ],
+    "require": {
+        "yiisoft/yii2": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "fedemotta\\cronjob\\": ""
+        }
+    }
+}
