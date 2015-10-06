@@ -36,7 +36,7 @@ See the following example:
 
 ```php
 <?php
- namespace somenamespace\controllers;
+namespace somenamespace\controllers;
 
 use fedemotta\yii2-cronjob\models\CronJob;
 use somenamespace\SomeModel;
