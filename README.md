@@ -24,7 +24,7 @@ to the require section of your `composer.json` file.
 This extension needs a database to manage the cron job execution. Run the following migration to create the table structure:
 
 ```
-yii migrate --migrationPath=@fedemotta/yii2-cronjob/migrations
+yii migrate --migrationPath=@fedemotta/cronjob/migrations
 ```
 
 Usage
