@@ -80,6 +80,40 @@ class CronJob extends \yii\db\ActiveRecord
     }
 
     /**
+     * Generate datetimes in range
+     * @param type $start_datetime
+     * @param type $end_datetime
+     * @param type $hoursDifference
+     * @return array of datetimes
+     */
+    public static function initDatetimesInRange($start_datetime, $end_datetime, $hoursDifference = 1){
+        $dates_in_range = [];
+        $begin = new DateTime($start_datetime);
+        $end = new DateTime($end_datetime);
+        $endModify = $end->modify( '+'.$hoursDifference.' hour' ); 
+
+        $interval = new DateInterval('P'.$hoursDifference.'H');
+        $daterange = new DatePeriod($begin, $interval ,$endModify);
+
+        foreach($daterange as $date){
+            $dates_in_range[$date->getTimestamp()] = $date->format("Y-m-d H:i:s");
+        }
+        return $dates_in_range;
+    }
+    
+
+    /**
+     * Entire range datetime.
+     * @param string $from
+     * @param string $to
+     * @param int $hoursDifference
+     * @return array
+     */
+    public static function getDatetimeRange($from, $to, $hoursDifference = 1) {
+        return self::initDatetimesInRange($from, $to, $hoursDifference);
+    }
+
+    /**
      * Count entire range date
      * @param array $range
      * @return int
