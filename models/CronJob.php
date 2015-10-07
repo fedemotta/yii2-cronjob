@@ -5,7 +5,7 @@
  * @license http://opensource.org/licenses/mit-license.php The MIT License (MIT)
  * @package yii2-cronjob
  */
-namespace fedemotta\cronjob;
+namespace fedemotta\cronjob\models;
 
 use DateTime;
 use DateInterval;
