@@ -38,7 +38,7 @@ See the following example:
 <?php
 namespace somenamespace\controllers;
 
-use fedemotta\yii2-cronjob\models\CronJob;
+use fedemotta\cronjob\models\CronJob;
 use somenamespace\SomeModel;
 use yii\console\Controller;
 
