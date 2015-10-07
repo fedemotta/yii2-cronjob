@@ -92,7 +92,7 @@ class CronJob extends \yii\db\ActiveRecord
         $end = new DateTime($end_datetime);
         $endModify = $end->modify( '+'.$hoursDifference.' hour' ); 
 
-        $interval = new DateInterval('P'.$hoursDifference.'H');
+        $interval = new DateInterval('PT'.$hoursDifference.'H');
         $daterange = new DatePeriod($begin, $interval ,$endModify);
 
         foreach($daterange as $date){
