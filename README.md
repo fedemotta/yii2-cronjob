@@ -1,5 +1,8 @@
 Yii2 Cron Job
 =============
+
+[![Latest Stable Version](https://poser.pugx.org/fedemotta/yii2-cronjob/v/stable)](https://packagist.org/packages/fedemotta/yii2-cronjob) [![Total Downloads](https://poser.pugx.org/fedemotta/yii2-cronjob/downloads)](https://packagist.org/packages/fedemotta/yii2-cronjob) [![Latest Unstable Version](https://poser.pugx.org/fedemotta/yii2-cronjob/v/unstable)](https://packagist.org/packages/fedemotta/yii2-cronjob) [![License](https://poser.pugx.org/fedemotta/yii2-cronjob/license)](https://packagist.org/packages/fedemotta/yii2-cronjob)
+
 Yii2 extension to help in the creation of automated console scripts. It helps to manage the execution of console scripts, for example avoiding the execution if the previous cron is already running. It generates a history of cron executed, with the time spent and helps to batch processing the script.
 
 Installation
