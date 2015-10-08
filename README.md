@@ -102,5 +102,6 @@ For some custom dates like this:
 
 And you can add a cron job to run every 10 minutes with some controller action like this:
 ```
-*/10 * * * * /path/to/yii/application/yii some-contr/yesterday
+*/10 * * * * /path/to/yii/application/yii some-contr/yesterday >> /var/log/console-app.log 2>&1
+
 ```
